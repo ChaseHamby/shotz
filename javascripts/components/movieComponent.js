@@ -21,7 +21,7 @@ const writeMovie = (arrayOfMovie) => {
   </div>
       `
     })
-    $("#movieLine").append(domString);
+    $("#movie").append(domString);
 };
 
 
