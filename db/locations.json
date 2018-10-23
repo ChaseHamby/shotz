@@ -1,0 +1,47 @@
+{
+    "locations":[
+        {
+            "Image":"https://static.rootsrated.com/media/article/large_natural/29703-percy-warner-gallery.jpg?1452727924",
+            "Name": "Edwin Warner Park",
+            "Address": "1002 Ole Hickory Blvd", 
+            "Time": "7:00 PM",
+            "TimeOfDay": "After Dark"
+        },
+        {
+            "Image":"https://thumbnails.trvl-media.com/38bzNPxQFTlMZpcPxpaomn-wfRc=/768x432/images.trvl-media.com/media/content/shared/images/travelguides/destination/637/Edwin-And-Percy-Warner-Parks-240347.jpg",
+            "Name": "Percy Warner Park",
+            "Address": "55 Neeley's Court", 
+            "Time": "1:00 AM",
+            "TimeOfDay": "Evening"
+        },
+        {
+            "Image":"https://media-cdn.tripadvisor.com/media/photo-w/03/3a/6e/fc/cummins-falls-state-park.jpg",
+            "Name": "Cummins Falls",
+            "Address": "Somewhere out by waterfalls...", 
+            "Time": "2:30 PM",
+            "TimeOfDay": "Afternoon"
+        },
+        {
+            "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPDUgvS3g9ETOJmbbX3dJglopHdYqo1oCWgiU6m4ASSoamr-XYgQ",
+            "Name": "College Grove Park",
+            "Address": "800 Arno Rd", 
+            "Time": "9:45 PM",
+            "TimeOfDay": "After Dark"
+        },
+        {
+            "Image":"http://www.decaturga.com/Home/ShowImage?id=5712&t=635870036464800000",
+            "Name": "River Rest Park",
+            "Address": "222 Willamette Dr", 
+            "Time": "3:00 PM",
+            "TimeOfDay": "Afternoon"
+        },
+        {
+            "Image":"http://outdoornebraska.gov/wp-content/uploads/2015/10/State-Parks.jpg",
+            "Name": "Other Park",
+            "Address": "1607 Blue Springs Rd", 
+            "Time": "8:00 AM",
+            "TimeOfDay": "Morning"
+        } 
+      
+    ]
+}
