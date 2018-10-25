@@ -1,10 +1,7 @@
-import {loadMovies} from '../data/movieData.js';
-// import {loadLocationsOnMovies} from '../data/locationsData.js';
-import {initialMovieView} from './movieComponent.js'
 
-const writeMovieDos = (arrayOfMovies) => {
+const writeMovieDos = (arrayOfMovie) => {
     let domString = '';
-    arrayOfMovies.forEach((location) => {
+    arrayOfMovie.forEach((location) => {
         domString += `
         <div id="divWrap" >
         <div class="${location.id} delete mb-5 mt-5"
@@ -28,21 +25,5 @@ const writeMovieDos = (arrayOfMovies) => {
     $("#available").append(domString);
 };
 
-
-// const bindEvents = () => {
-//     $('#available').on('click', '.location-card', (e) => {
-//       const clickedLocationCard = $(e.target).closest('.location-card').attr('id');
-//       $('#available').hide();
-//       $('#pins-page').show();
-//       initialMovieView(clickedLocationCard);
-//     })
-//   }
-
-// const initializeLocationView = () => {
-//     loadMovies().then((movies) => {
-//         writeMovieDos(movies)
-//         bindEvents();
-//     }).catch((error) => {
-//         console.error(error);
-// });
+export {writeMovieDos}
 

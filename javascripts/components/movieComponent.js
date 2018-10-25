@@ -1,8 +1,7 @@
-import {loadLocationsOnMovies} from '../data/locationsData.js'
 
-const writeMovie = (arrayOfMovies) => {
+const writeMovie = (arrayOfMovie) => {
     let domString = '';
-    arrayOfMovies.forEach((movie) => {
+    arrayOfMovie.forEach((movie) => {
       domString += `
       <div class="movieClass col-md-6 col-md-offset-3 p-2" id="location-card">
       <div class="thumbnail">
@@ -38,3 +37,5 @@ const writeMovie = (arrayOfMovies) => {
 //         console.error('things messed up in pins', error);
 //       });
 //   }
+
+export {writeMovie}

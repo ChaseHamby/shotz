@@ -1,7 +1,8 @@
-import {initialPageView} from './data/movieData.js';
+import {printLocation, printMovie} from './events.js'
 
 const initializeApp = () => {
-  initialPageView();
+  printLocation();
+  printMovie();
 }
 
 initializeApp();
