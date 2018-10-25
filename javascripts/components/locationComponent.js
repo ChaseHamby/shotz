@@ -4,7 +4,6 @@ const writeMovieDos = (arrayOfMovie) => {
     arrayOfMovie.forEach((location) => {
         domString += `
         <div id="divWrap" >
-        <div class="${location.id} delete mb-5 mt-5"
         <div class="${location.TimeOfDay} delete mb-5 mt-5"
         <div class="thumbnail">
             <img src="${location.Image}"

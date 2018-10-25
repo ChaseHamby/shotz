@@ -26,4 +26,3 @@
     $('.Afternoon').hide();
     $('.Dark').hide();
   })
-
