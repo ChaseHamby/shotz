@@ -4,7 +4,7 @@ import {writeMovieDos} from "../javascripts/components/locationComponent.js"
 $.get('../db/movie.json')
   .done((data) => {
     console.log(data);
-    writeMovie(data.movie);
+    writeMovie(data.movies);
   })
   .fail((error) => {
     console.error(error);

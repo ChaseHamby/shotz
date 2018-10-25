@@ -1,10 +1,36 @@
 {
-    "movie":[
+    "movies":[
         {
+            "id": "movie1",
             "Name":"At The Mountains of Madness",
             "Genre": "Horror",
             "DateRelease": "Oct 31, 2019", 
-            "Description": "Expedition up a mountain leaves a group of hikers in a very bad place."
+            "Description": "Expedition up a mountain leaves a group of hikers in a very bad place.",
+            "Locations": ["location1", "location3", "location6"]
+        },
+        {
+            "id": "movie2",
+            "Name": "There Will Be Blood",
+            "Genre": "Drama",
+            "DateRelease": "10/15/2020",
+            "Description": "The tale of an oil tycoon",
+            "Locations": ["location2", "location3", "location5"]
+        },
+        {
+            "id": "movie3",
+            "Name": "Schitt's Creek",
+            "Genre": "Comedy",
+            "DateRelease": "09/22/2021",
+            "Description": "Family loses all of their money and must relocate to the lovely town of Schitt's Creek",
+            "Locations": "location4"
+        },
+        {
+            "id": "movie4",
+            "Name": "The Shawshank Redemption",
+            "Genre": "Thriller",
+            "DateRelease": "07/31/1994",
+            "Description": "Dude goes to prison, even though he is innocent!",
+            "Locations": ["location1", "location5", "location6"]
         }
     ]
 }
