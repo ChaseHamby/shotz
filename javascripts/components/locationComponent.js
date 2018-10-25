@@ -1,5 +1,5 @@
 
-const writeMovieDos = (arrayOfMovie) => {
+const writeLocation = (arrayOfMovie) => {
     let domString = '';
     arrayOfMovie.forEach((location) => {
         domString += `
@@ -24,5 +24,5 @@ const writeMovieDos = (arrayOfMovie) => {
     $("#available").append(domString);
 };
 
-export {writeMovieDos}
+export {writeLocation}
 

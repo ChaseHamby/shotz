@@ -1,8 +1,7 @@
-import {printLocation, printMovie, initializeAction} from './events.js'
+import {initializeAction, initializeEverythingView} from './events.js'
 
 const initializeApp = () => {
-  printLocation();
-  printMovie();
+  initializeEverythingView()
   initializeAction();
 }
 
