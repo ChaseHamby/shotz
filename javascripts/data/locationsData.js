@@ -1,16 +1,3 @@
-// const loadLocationsForMovies = () => {
-//   return new Promise((resolve, reject) => {
-//     $.get('../db/locations.json')
-//       .done((data) => {
-//         const locationsForMovies = data.locations.filter(location => location.movie.id == location.id)
-//         resolve(locationsForMovies);
-//       })
-//       .fail((error) => {
-//         reject(error);
-//       })
-//   })
-// }
-
 
   $('body').on('click', 'button#morning', (e) => {
     $('.Morning').show();
@@ -40,4 +27,3 @@
     $('.Dark').hide();
   })
 
-  // export {loadLocationsForMovies, loadLocationsOnMovies}
