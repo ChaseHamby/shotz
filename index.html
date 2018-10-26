@@ -8,13 +8,8 @@
     <title>Shotz</title>
 </head>
 <body>
+    <div id="mainPage">
 
-    <div class="row d-flex p-2">
-        <div id="movie" class="col">
-            <h1 class="ml-2">Movie Info</h1>
-        </div>
-     </div>
-    
      <div class="ml-2">
      <button class="btn btn-primary" id="morning">Morning</button>
      <button class="btn btn-secondary" id="afternoon">Afternoon</button>
@@ -25,10 +20,22 @@
      <div class="input-group mb-3 p-2">
         <input type="text" id="myInput" class="form-control" placeholder="Search to your heart's desire..." aria-label="Recipient's username" aria-describedby="basic-addon2">
     </div>
+
+    <div id="movieList" class="d-flex row p-2">
+            <h1 class="ml-2">Movie Info</h1>
+        <div id="movie" class="col">
+        </div>
+     </div>
+
     <div id="available" class="col mt-5">
         <h1>Locations</h1>
     </div>
-        
+    <div id="single-movie-page" class="page-container" style="display: none;">
+        <button type="button" class="btn btn-secondary float-left" id="toMainPage">Back to Home</button>
+        <h1 class="text-center">Pins</h1>
+        <div id="single-movies" class="d-flex flex-row flex-wrap"></div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>   
