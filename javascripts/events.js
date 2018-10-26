@@ -1,5 +1,6 @@
 import {printMovie} from './data/movieData.js'
 import {printLocation } from './data/locationsData.js';
+// import {initialMovieView} from './components/movieComponent.js'
 
 // Search bar functionality // 
 const initializeAction = () => {
@@ -13,16 +14,17 @@ $(document).ready(function(){
   });
 };
 
-// Final promise call for main.js //
-const initializeEverythingView = () => {
-  printMovie()
-  printLocation()
-  .then((data) => {
-  })
-  .catch((error) => {
-    console.error(error)
-  })
-};
+
+// // Final promise call for main.js //
+// const initializeEverythingView = () => {
+//   printMovie()
+//   printLocation()
+//   .then((data) => {
+//   })
+//   .catch((error) => {
+//     console.error(error)
+//   })
+// };
 
 // Event Listeners for Buttons // 
 
@@ -54,4 +56,4 @@ $('body').on('click', 'button#evening', (e) => {
   $('.Dark').hide();
 })
 
-export {initializeAction, initializeEverythingView};
+export {initializeAction};
