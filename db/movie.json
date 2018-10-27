@@ -3,6 +3,7 @@
         {
             "id": 1,
             "movieId": "movie1",
+            "Image":"https://images-na.ssl-images-amazon.com/images/I/51wItE-WnPL._SX331_BO1,204,203,200_.jpg",
             "Name":"At The Mountains of Madness",
             "Genre": "Horror",
             "DateRelease": "Oct 31, 2019", 
@@ -12,6 +13,7 @@
         {
             "id": 2,
             "movieId": "movie2",
+            "Image":"https://mrrumsey.files.wordpress.com/2014/06/there-will-be-blood-poster.jpg",
             "Name": "There Will Be Blood",
             "Genre": "Drama",
             "DateRelease": "10/15/2020",
@@ -21,6 +23,7 @@
         {
             "id": 3,
             "movieId": "movie3",
+            "Image":"http://fw007377-flywheel.netdna-ssl.com/wp-content/uploads/2016/03/Schitts-Creek-3-850x638.jpeg",
             "Name": "Schitt's Creek",
             "Genre": "Comedy",
             "DateRelease": "09/22/2021",
@@ -30,6 +33,7 @@
         {
             "id": 4,
             "movieId": "movie4",
+            "Image":"https://www.fye.com/on/demandware.static/-/Sites-fye-master/default/dwa5044fd1/aec/car/cark26/aec.cark2650dvd_0.jpg",
             "Name": "The Shawshank Redemption",
             "Genre": "Thriller",
             "DateRelease": "07/31/1994",

@@ -10,32 +10,38 @@
 <body>
     <div id="mainPage">
 
-     <div class="ml-2">
-     <button class="btn btn-primary" id="morning">Morning</button>
-     <button class="btn btn-secondary" id="afternoon">Afternoon</button>
-     <button class="btn btn-warning" id="evening">Evening</button>
-     <button class="btn btn-danger" id="dark">After Dark</button>
+        <!-- Buttons -->
+     <div class="d-flex mb-2 justify-content-center">
+     <button class="btn btn-primary m-2" id="morning">Morning</button>
+     <button class="btn btn-secondary m-2" id="afternoon">Afternoon</button>
+     <button class="btn btn-warning m-2" id="evening">Evening</button>
+     <button class="btn btn-danger m-2" id="dark">After Dark</button>
     </div>
      
+        <!-- Search Bar -->
      <div class="input-group mb-3 p-2">
         <input type="text" id="myInput" class="form-control" placeholder="Search to your heart's desire..." aria-label="Recipient's username" aria-describedby="basic-addon2">
     </div>
 
-    <div id="movieList" class="d-flex row p-2">
-            <h1 class="ml-2">Movie Info</h1>
-        <div id="movie" class="col">
+        <!-- Movie Div  -->
+    <h1 class="d-flex justify-content-center">Movie Info</h1>
+    <div id="movieList" class="col">
+        <div id="movie" class="row">
         </div>
      </div>
 
-    <div id="available" class="col mt-5">
-        <h1>Locations</h1>
+        <!-- Location Div -->
+     <h1 class="d-flex justify-content-center">Locations</h1>
+     <div id="available" class="row"></div>
+
     </div>
+
+    <!-- Hidden Single Movie Div -->
     <div id="single-movie-page" class="page-container" style="display: none;">
-        <button type="button" class="btn btn-secondary float-left" id="toMainPage">Back to Home</button>
-        <h1 class="text-center">Pins</h1>
-        <div id="single-movies" class="d-flex flex-row flex-wrap"></div>
-      </div>
-    </div>
+            <button type="button" class="btn btn-secondary float-left m-3" id="toMainPage">Back to Home</button>
+            <h1 class="text-center">Movie</h1>
+            <div id="single-movies" class="d-flex flex-row flex-wrap"></div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>   
