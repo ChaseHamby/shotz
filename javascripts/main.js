@@ -1,10 +1,11 @@
-import {initializeAction} from './events.js'
-import {initializeLocationView} from './components/locationComponent.js'
+import {initializeAction, initializeEverythingView} from './events.js'
+// import {bindEvents} from './components/locationComponent.js'
 
 const initializeApp = () => {
-  // initializeEverythingView()
-  initializeLocationView()
+  initializeEverythingView()
+  // initializeLocationView()
   initializeAction();
+  // bindEvents();
 }
 
 initializeApp();
