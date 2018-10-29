@@ -49,11 +49,11 @@ const writeMovieDos = (arrayOfMovies) => {
 // Click on movie function
 
 const bindEvents1 = () => {
-  $('body').on('click', (e) => {
+  $('#movie').on('click', (e) => {
     const clickedBoardId = $(e.target).closest('.movie-card').attr('id'); // attr targets the id within that specific div id
     $('#mainPage').hide();
     $('#single-movie-page').show();
-    writeMovieDos(clickedBoardId)
+    // writeMovieDos(clickedBoardId)
   })
 }
 bindEvents1();

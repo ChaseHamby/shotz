@@ -4,19 +4,7 @@ const printMovie = () => {
     return new Promise ((resolve, reject) => {
     $.get('../db/movie.json')
         .done((data) => {
-            resolve (writeMovie(data.movie));
-        })
-        .fail((error) => {
-            reject(error)
-        });
-    });
-};
-
-const printMovie2 = () => {
-    return new Promise ((resolve, reject) => {
-    $.get('../db/movie.json')
-        .done((data) => {
-            resolve (writeMovieDos(data.movie));
+            resolve ((data.movie));
         })
         .fail((error) => {
             reject(error)
@@ -54,4 +42,4 @@ const moviePromise = () => {
     })
 };
 
-export {printMovie, printMovie2, moviesWithLocations, moviePromise}
+export {printMovie, moviesWithLocations, moviePromise}

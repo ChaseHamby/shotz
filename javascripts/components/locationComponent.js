@@ -1,6 +1,4 @@
-// import {printMovie, moviesWithLocations, moviePromise} from './data/movieData.js'
 import {printLocation} from '../data/locationsData.js'
-// import {loadMoviesOnLocations} from '../data/movieData.js';
 import {initializeAction} from '../events.js'
 
 const writeLocation = (arrayOfLocations) => {
@@ -23,7 +21,6 @@ const writeLocation = (arrayOfLocations) => {
     </div>`
     })
     $("#locationSpace").append(domString);
-    initializeAction();
 };
 
 // Click back button function //
