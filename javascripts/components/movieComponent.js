@@ -7,7 +7,7 @@ const writeMovie = (arrayOfMovies) => {
     arrayOfMovies.forEach((movie) => {
       domString += `
       <div id="movieWrap" class="d-flex flex-row">
-      <div class="col-5 m-2">
+      <div class="col-5 movie-card m-2">
           <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="193">
               <div id="${movie.id}">
               <h5 id="nameId">Name: ${movie.Name}</h5>
@@ -23,23 +23,14 @@ const writeMovie = (arrayOfMovies) => {
     $("#movie").append(domString);
 };
 
-// Click on movie function
-
-const bindEvents1 = () => {
-    $('#movie').on('click', (e) => {
-      $('#mainPage').hide();
-      $('#single-movie-page').show();
-    })
-  }
-  bindEvents1();
-
+// Function below prints on single-movie page
 
 const writeMovieDos = (arrayOfMovies) => {
     let domString = '';
     arrayOfMovies.forEach((movie) => {
       domString += `
       <div id="movieWrap" class="d-flex flex-row">
-      <div class="col-5 m-2">
+      <div class="col-5 movie-card m-2">
           <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="193">
               <div id="${movie.id}">
               <h5 id="nameId">Name: ${movie.Name}</h5>
@@ -54,5 +45,18 @@ const writeMovieDos = (arrayOfMovies) => {
     })
     $("#single-movie-page").append(domString);
 };
+
+// Click on movie function
+
+const bindEvents1 = () => {
+  $('body').on('click', (e) => {
+    const clickedBoardId = $(e.target).closest('.movie-card').attr('id'); // attr targets the id within that specific div id
+    $('#mainPage').hide();
+    $('#single-movie-page').show();
+    writeMovieDos(clickedBoardId)
+  })
+}
+bindEvents1();
+
 
 export {writeMovie, writeMovieDos}

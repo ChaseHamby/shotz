@@ -28,10 +28,10 @@ const moviesWithLocations = (movie) => {
     return new Promise((resolve, reject)=> {
         $.get('../db/locations.json')
             .done((data) => {
-                const moviePins = movie.map(movie1 => {
-                    const matchingLocations = data.locations.filter(location =>location.Movie == movie1.Name);
-                    movie1.locations = matchingLocations;
-                    return movie1
+                const moviePins = movie.map(moviex => {
+                    const matchingLocations = data.locations.filter(location =>location.Movie == moviex.Name);
+                    moviex.locations = matchingLocations;
+                    return moviex
                 })
                 resolve(moviePins);
       })
