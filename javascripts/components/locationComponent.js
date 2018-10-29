@@ -1,9 +1,7 @@
-// import {initializeMovieView} from '../components/movieComponent.js'
+// import {printMovie, moviesWithLocations, moviePromise} from './data/movieData.js'
 import {printLocation} from '../data/locationsData.js'
 // import {loadMoviesOnLocations} from '../data/movieData.js';
 import {initializeAction} from '../events.js'
-
-
 
 const writeLocation = (arrayOfLocations) => {
     let domString = '';
@@ -28,31 +26,16 @@ const writeLocation = (arrayOfLocations) => {
     initializeAction();
 };
 
-// Click back button function
-const bindEvents2 = () => {
+// Click back button function //
+
+const backButton = () => {
     $('#toMainPage').click(() => {
         $('#mainPage').show(); 
         $('#single-movie-page').hide(); 
     })
 }
-  bindEvents2();
+  backButton();
 
-  // const clickedMovieId = $(e.target).closest('.movie-card').attr('id');
-  // console.log('not working', clickedMovieId)
-  // $('#mainPage').hide();
-  // $('#single-movie-page').show();
-  // initializeMovieView(clickedMovieId);
-  
-// const initializeLocationView = () => {
-//     printLocation().then((locations) => {
-//       return loadMoviesOnLocations(locations);
-//     }).then((moviesWithLocations) => {
-//       writeLocation(moviesWithLocations);
-//       bindEvents();
-//     }).catch((error) => {
-//       console.error(error);
-//     })
-//   }
 
 export {writeLocation}
 
