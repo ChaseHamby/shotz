@@ -1,4 +1,4 @@
-import {printMovie} from './data/movieData.js'
+import {printMovie, printMovie2, moviesWithLocations, moviePromise} from './data/movieData.js'
 import {printLocation} from './data/locationsData.js';
 // import {initialMovieView} from './components/movieComponent.js'
 
@@ -17,6 +17,7 @@ $(document).ready(function(){
 // Final promise call for main.js //
 const initializeEverythingView = () => {
   printMovie()
+  printMovie2()
   printLocation()
   .then((data) => {
   })

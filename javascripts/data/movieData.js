@@ -1,10 +1,22 @@
-import {writeMovie} from "../components/movieComponent.js"
+import {writeMovie, writeMovieDos} from "../components/movieComponent.js"
 
 const printMovie = () => {
     return new Promise ((resolve, reject) => {
     $.get('../db/movie.json')
         .done((data) => {
             resolve (writeMovie(data.movie));
+        })
+        .fail((error) => {
+            reject(error)
+        });
+    });
+};
+
+const printMovie2 = () => {
+    return new Promise ((resolve, reject) => {
+    $.get('../db/movie.json')
+        .done((data) => {
+            resolve (writeMovieDos(data.movie));
         })
         .fail((error) => {
             reject(error)
@@ -42,4 +54,4 @@ const moviePromise = () => {
     })
 };
 
-export {printMovie, moviesWithLocations, moviePromise}
+export {printMovie, printMovie2, moviesWithLocations, moviePromise}
