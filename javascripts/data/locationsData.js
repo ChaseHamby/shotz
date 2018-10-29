@@ -4,7 +4,7 @@ const printLocation = () => {
     return new Promise ((resolve, reject) => {
     $.get('../db/locations.json')
     .done((data) => {
-      resolve (writeLocation(data.locations));
+      resolve ((data.locations));
     })
     .fail((error) => {
       console.error(error);
