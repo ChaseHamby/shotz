@@ -6,7 +6,8 @@
             "Name": "Edwin Warner Park",
             "Address": "1002 Ole Hickory Blvd", 
             "Time": "7:00 PM",
-            "TimeOfDay": "After Dark"
+            "TimeOfDay": "After Dark",
+            "Movie": "At The Moutains of Madness"
         },
         {
             "locationId": 2,
@@ -14,7 +15,8 @@
             "Name": "Percy Warner Park",
             "Address": "55 Neeley's Court", 
             "Time": "1:00 AM",
-            "TimeOfDay": "Evening"
+            "TimeOfDay": "Evening",
+            "Movie": "Schitt's Creek"
         },
         {
             "locationId": 3,
@@ -22,7 +24,8 @@
             "Name": "Cummins Falls",
             "Address": "Somewhere out by waterfalls...", 
             "Time": "2:30 PM",
-            "TimeOfDay": "Afternoon"
+            "TimeOfDay": "Afternoon",
+            "Movie": "The Shawshank Redemption"
         },
         {
             "locationId": 4,
@@ -30,7 +33,8 @@
             "Name": "College Grove Park",
             "Address": "800 Arno Rd", 
             "Time": "9:45 PM",
-            "TimeOfDay": "After Dark"
+            "TimeOfDay": "After Dark",
+            "Movie": "There Will Be Blood"
         },
         {
             "locationId": 5,
@@ -38,7 +42,8 @@
             "Name": "River Rest Park",
             "Address": "222 Willamette Dr", 
             "Time": "3:00 PM",
-            "TimeOfDay": "Afternoon"
+            "TimeOfDay": "Afternoon",
+            "Movie": "There Will Be Blood"
         },
         {
             "locationId": 6,
@@ -46,7 +51,8 @@
             "Name": "Other Park",
             "Address": "1607 Blue Springs Rd", 
             "Time": "8:00 AM",
-            "TimeOfDay": "Morning"
+            "TimeOfDay": "Morning",
+            "Movie": "Schitt's Creek"
         } 
       
     ]
